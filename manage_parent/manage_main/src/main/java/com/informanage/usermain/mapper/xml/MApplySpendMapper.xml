@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.informanage.usermain.mapper.MApplySpendMapper">
+    <select id="payMoney" resultType="com.informanage.usermain.entity.PaySalary">
+select m.dealuserid as dealid,m.money as salary,m.applicationid as userid,
+o.departmentid,w.name as dealname
+from m_apply_spend m
+join user_work_info w on m.dealuserid=w.userid
+join (select departmentid from user_work_info
+join m_apply_spend on user_work_info.userid=m_apply_spend.applicationid
+where m_apply_spend.id=#{id}) as o
+where m.id=#{id}
+</select>
+    <select id="selectMyPage" resultType="com.informanage.usermain.entity.VO.ApplySpendPlus">
+SELECT a.id as tableid,w.name,a.money,a.type,a.detail,a.sourceurl,a.gmt_create
+FROM m_apply_spend as a
+left join user_work_info as w on userid=applicationid
+        ${ew.customSqlSegment}
+    </select>
+</mapper>

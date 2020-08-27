@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.informanage.usermain.mapper.PaySalaryMapper">
+<select id="selectMyPage" resultType="com.informanage.usermain.entity.VO.ApplySpendPlus">
+
+    SELECT a.statis,w.name,a.money,a.type,a.detail,a.sourceurl,a.gmt_create
+FROM m_apply_spend as a
+left join user_work_info as w on userid=applicationid
+        ${ew.customSqlSegment}
+</select>
+    <select id="autoPaySalary" resultType="com.informanage.usermain.entity.VO.PaySalaryVo">
+SELECT w.userid,w.departmentid,w.salary,w.phone,u.email,w.name
+ FROM huadi.user_work_info as w
+ join user u on u.id=w.userid
+    </select>
+    <select id="sendInfoByTableId" resultType="com.informanage.usermain.entity.VO.PaySalaryVo">
+     SELECT w.userid,w.departmentid,w.salary,w.phone,u.email,w.name
+ FROM huadi.user_work_info as w
+ join user u on u.id=w.userid
+ join pay_salary as p on p.userid=w.userid
+ where p.id=#{id}
+    </select>
+    <select id="selectPageAllSalary" resultType="com.informanage.usermain.entity.VO.AllSalaryRecords">
+SELECT p.id as tableid,p.gmt_create as time,p.salary as money,w.name,a.department,b.dealname
+FROM pay_salary as p
+join user_work_info as w on p.userid=w.userid
+join(select name as department,pay_salary.id from department
+join pay_salary on department.id=pay_salary.departmentid
+) as a on a.id=p.id
+join(select name as dealname,id from user_work_info
+right join pay_salary on user_work_info.userid=pay_salary.dealid)as b on b.id=p.id
+ ${ew.customSqlSegment}
+    </select>
+    
+    <select id="getBarSalary" resultType="com.informanage.usermain.entity.admin.BarSalary">
+    SELECT salary,count(*) as num FROM huadi.user_work_info Group by salary
+    </select>
+
+    <select id="getBarSalaryByYear" resultType="com.informanage.usermain.entity.admin.BarSalary">
+SELECT  salary,count(*) as num FROM huadi.pay_salary
+ ${ew.customSqlSegment}
+    </select>
+
+    <select id="getSalaryType" resultType="com.informanage.usermain.entity.admin.PieSalaryType">
+SELECT type as name,count(*) as value FROM huadi.m_apply_spend
+  ${ew.customSqlSegment}
+ Group by  type
+    </select>
+</mapper>

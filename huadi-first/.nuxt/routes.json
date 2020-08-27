@@ -1,0 +1,212 @@
+[
+  {
+    "name": "login-email_login",
+    "path": "/login/email_login",
+    "component": "C:\\\\Users\\\\17210\\\\VScodeWorkspace\\\\huadi-first\\\\pages\\\\login\\\\email_login.vue",
+    "chunkName": "pages/login/email_login",
+    "_name": "_2d0044b8"
+  },
+  {
+    "name": "login-face_login",
+    "path": "/login/face_login",
+    "component": "C:\\\\Users\\\\17210\\\\VScodeWorkspace\\\\huadi-first\\\\pages\\\\login\\\\face_login.vue",
+    "chunkName": "pages/login/face_login",
+    "_name": "_f049e276"
+  },
+  {
+    "name": "login-findemailpass",
+    "path": "/login/findemailpass",
+    "component": "C:\\\\Users\\\\17210\\\\VScodeWorkspace\\\\huadi-first\\\\pages\\\\login\\\\findemailpass.vue",
+    "chunkName": "pages/login/findemailpass",
+    "_name": "_280ae246"
+  },
+  {
+    "name": "login-findphonepass",
+    "path": "/login/findphonepass",
+    "component": "C:\\\\Users\\\\17210\\\\VScodeWorkspace\\\\huadi-first\\\\pages\\\\login\\\\findphonepass.vue",
+    "chunkName": "pages/login/findphonepass",
+    "_name": "_1d45e218"
+  },
+  {
+    "name": "login-phone_login",
+    "path": "/login/phone_login",
+    "component": "C:\\\\Users\\\\17210\\\\VScodeWorkspace\\\\huadi-first\\\\pages\\\\login\\\\phone_login.vue",
+    "chunkName": "pages/login/phone_login",
+    "_name": "_810acfec"
+  },
+  {
+    "name": "money-allapply",
+    "path": "/money/allapply",
+    "component": "C:\\\\Users\\\\17210\\\\VScodeWorkspace\\\\huadi-first\\\\pages\\\\money\\\\allapply.vue",
+    "chunkName": "pages/money/allapply",
+    "_name": "_bb85bc7c"
+  },
+  {
+    "name": "money-dealapply",
+    "path": "/money/dealapply",
+    "component": "C:\\\\Users\\\\17210\\\\VScodeWorkspace\\\\huadi-first\\\\pages\\\\money\\\\dealapply.vue",
+    "chunkName": "pages/money/dealapply",
+    "_name": "_65d06c7d"
+  },
+  {
+    "name": "money-moneyapply",
+    "path": "/money/moneyapply",
+    "component": "C:\\\\Users\\\\17210\\\\VScodeWorkspace\\\\huadi-first\\\\pages\\\\money\\\\moneyapply.vue",
+    "chunkName": "pages/money/moneyapply",
+    "_name": "_3f939b7a"
+  },
+  {
+    "name": "money-myapply",
+    "path": "/money/myapply",
+    "component": "C:\\\\Users\\\\17210\\\\VScodeWorkspace\\\\huadi-first\\\\pages\\\\money\\\\myapply.vue",
+    "chunkName": "pages/money/myapply",
+    "_name": "_d6dd0006"
+  },
+  {
+    "name": "money-paysalary",
+    "path": "/money/paysalary",
+    "component": "C:\\\\Users\\\\17210\\\\VScodeWorkspace\\\\huadi-first\\\\pages\\\\money\\\\paysalary.vue",
+    "chunkName": "pages/money/paysalary",
+    "_name": "_69dbe66d"
+  },
+  {
+    "name": "project-allproject",
+    "path": "/project/allproject",
+    "component": "C:\\\\Users\\\\17210\\\\VScodeWorkspace\\\\huadi-first\\\\pages\\\\project\\\\allproject.vue",
+    "chunkName": "pages/project/allproject",
+    "_name": "_0873ba06"
+  },
+  {
+    "name": "project-allprojectdetail",
+    "path": "/project/allprojectdetail",
+    "component": "C:\\\\Users\\\\17210\\\\VScodeWorkspace\\\\huadi-first\\\\pages\\\\project\\\\allprojectdetail.vue",
+    "chunkName": "pages/project/allprojectdetail",
+    "_name": "_57537757"
+  },
+  {
+    "name": "project-creatproject",
+    "path": "/project/creatproject",
+    "component": "C:\\\\Users\\\\17210\\\\VScodeWorkspace\\\\huadi-first\\\\pages\\\\project\\\\creatproject.vue",
+    "chunkName": "pages/project/creatproject",
+    "_name": "_c9d216c4"
+  },
+  {
+    "name": "project-mypassproject",
+    "path": "/project/mypassproject",
+    "component": "C:\\\\Users\\\\17210\\\\VScodeWorkspace\\\\huadi-first\\\\pages\\\\project\\\\mypassproject.vue",
+    "chunkName": "pages/project/mypassproject",
+    "_name": "_0eb99c7e"
+  },
+  {
+    "name": "project-mywaitproject",
+    "path": "/project/mywaitproject",
+    "component": "C:\\\\Users\\\\17210\\\\VScodeWorkspace\\\\huadi-first\\\\pages\\\\project\\\\mywaitproject.vue",
+    "chunkName": "pages/project/mywaitproject",
+    "_name": "_3a4ce89a"
+  },
+  {
+    "name": "regist-email_regist",
+    "path": "/regist/email_regist",
+    "component": "C:\\\\Users\\\\17210\\\\VScodeWorkspace\\\\huadi-first\\\\pages\\\\regist\\\\email_regist.vue",
+    "chunkName": "pages/regist/email_regist",
+    "_name": "_5d840c2a"
+  },
+  {
+    "name": "regist-face_regist",
+    "path": "/regist/face_regist",
+    "component": "C:\\\\Users\\\\17210\\\\VScodeWorkspace\\\\huadi-first\\\\pages\\\\regist\\\\face_regist.vue",
+    "chunkName": "pages/regist/face_regist",
+    "_name": "_2c399e77"
+  },
+  {
+    "name": "regist-phone_regist",
+    "path": "/regist/phone_regist",
+    "component": "C:\\\\Users\\\\17210\\\\VScodeWorkspace\\\\huadi-first\\\\pages\\\\regist\\\\phone_regist.vue",
+    "chunkName": "pages/regist/phone_regist",
+    "_name": "_1a542318"
+  },
+  {
+    "name": "user-avator",
+    "path": "/user/avator",
+    "component": "C:\\\\Users\\\\17210\\\\VScodeWorkspace\\\\huadi-first\\\\pages\\\\user\\\\avator.vue",
+    "chunkName": "pages/user/avator",
+    "_name": "_b40515de"
+  },
+  {
+    "name": "user-basic_info",
+    "path": "/user/basic_info",
+    "component": "C:\\\\Users\\\\17210\\\\VScodeWorkspace\\\\huadi-first\\\\pages\\\\user\\\\basic_info.vue",
+    "chunkName": "pages/user/basic_info",
+    "_name": "_032b9725"
+  },
+  {
+    "name": "user-changepass",
+    "path": "/user/changepass",
+    "component": "C:\\\\Users\\\\17210\\\\VScodeWorkspace\\\\huadi-first\\\\pages\\\\user\\\\changepass.vue",
+    "chunkName": "pages/user/changepass",
+    "_name": "_51375fc7"
+  },
+  {
+    "name": "user-user_info",
+    "path": "/user/user_info",
+    "component": "C:\\\\Users\\\\17210\\\\VScodeWorkspace\\\\huadi-first\\\\pages\\\\user\\\\user_info.vue",
+    "chunkName": "pages/user/user_info",
+    "_name": "_ca34c2e8"
+  },
+  {
+    "name": "work-dealgreatwork",
+    "path": "/work/dealgreatwork",
+    "component": "C:\\\\Users\\\\17210\\\\VScodeWorkspace\\\\huadi-first\\\\pages\\\\work\\\\dealgreatwork.vue",
+    "chunkName": "pages/work/dealgreatwork",
+    "_name": "_f670a7d4"
+  },
+  {
+    "name": "work-dealnormalwork",
+    "path": "/work/dealnormalwork",
+    "component": "C:\\\\Users\\\\17210\\\\VScodeWorkspace\\\\huadi-first\\\\pages\\\\work\\\\dealnormalwork.vue",
+    "chunkName": "pages/work/dealnormalwork",
+    "_name": "_039269b0"
+  },
+  {
+    "name": "work-managegreatwork",
+    "path": "/work/managegreatwork",
+    "component": "C:\\\\Users\\\\17210\\\\VScodeWorkspace\\\\huadi-first\\\\pages\\\\work\\\\managegreatwork.vue",
+    "chunkName": "pages/work/managegreatwork",
+    "_name": "_651ac4bd"
+  },
+  {
+    "name": "work-managenormalwork",
+    "path": "/work/managenormalwork",
+    "component": "C:\\\\Users\\\\17210\\\\VScodeWorkspace\\\\huadi-first\\\\pages\\\\work\\\\managenormalwork.vue",
+    "chunkName": "pages/work/managenormalwork",
+    "_name": "_2da265e9"
+  },
+  {
+    "name": "work-updateworkinfo",
+    "path": "/work/updateworkinfo",
+    "component": "C:\\\\Users\\\\17210\\\\VScodeWorkspace\\\\huadi-first\\\\pages\\\\work\\\\updateworkinfo.vue",
+    "chunkName": "pages/work/updateworkinfo",
+    "_name": "_4850b4d4"
+  },
+  {
+    "name": "work-workinfo",
+    "path": "/work/workinfo",
+    "component": "C:\\\\Users\\\\17210\\\\VScodeWorkspace\\\\huadi-first\\\\pages\\\\work\\\\workinfo.vue",
+    "chunkName": "pages/work/workinfo",
+    "_name": "_1801d88b"
+  },
+  {
+    "name": "work-changeworkinfo-id",
+    "path": "/work/changeworkinfo/:id?",
+    "component": "C:\\\\Users\\\\17210\\\\VScodeWorkspace\\\\huadi-first\\\\pages\\\\work\\\\changeworkinfo\\\\_id.vue",
+    "chunkName": "pages/work/changeworkinfo/_id",
+    "_name": "_53ee2f0f"
+  },
+  {
+    "name": "index",
+    "path": "/",
+    "component": "C:\\\\Users\\\\17210\\\\VScodeWorkspace\\\\huadi-first\\\\pages\\\\index.vue",
+    "chunkName": "pages/index",
+    "_name": "_57f335a7"
+  }
+]

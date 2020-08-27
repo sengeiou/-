@@ -1,0 +1,33 @@
+server:
+  port: 8002 # 服务端口
+
+spring:
+  profiles:
+    active: dev # 环境设置
+  application:
+    name: manage-oss # 服务名
+
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848 # nacos服务地址
+
+feign:
+  hystrix:
+    enabled: true
+
+#配置超时时间，设置hystrix的超时时间为6000ms，默认为1000ms
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds=6000:
+aliyun:
+  oss:
+    endpoint: oss-cn-beijing.aliyuncs.com
+    keyid: LTAI4G7ks9vAb14ef8rLj761
+    keysecret: VoK1b7oSQaWCRJ8oq2Wkt59yCCarCr
+    #bucket可以在控制台创建，也可以使用java代码创建，注意先测试bucket是否已被占用
+    bucketname: huadi-test

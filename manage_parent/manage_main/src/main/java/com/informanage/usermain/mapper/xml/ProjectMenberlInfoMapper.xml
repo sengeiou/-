@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.informanage.usermain.mapper.ProjectMenberlInfoMapper">
+<select id="selectMyPage" resultType="com.informanage.usermain.entity.VO.MyProjectVo">
+    SELECT m.id,name,info,creatusername,membernum,m.gmt_create
+     FROM project_menberl_info as m
+    join project as p on m.projectid=p.id
+  ${ew.customSqlSegment}
+</select>
+    <select id="selectAllDetailPage" resultType="com.informanage.usermain.entity.VO.AllProjectDetailVo">
+  SELECT m.id,name,creatusername,m.gmt_create,m.membername,m.statis
+     FROM project_menberl_info as m
+    join project as p on m.projectid=p.id
+  ${ew.customSqlSegment}
+
+    </select>
+</mapper>

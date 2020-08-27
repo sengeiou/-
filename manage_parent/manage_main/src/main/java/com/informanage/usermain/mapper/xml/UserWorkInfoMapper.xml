@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.informanage.usermain.mapper.UserWorkInfoMapper">
+    <select id="getUserPower" resultType="com.informanage.usermain.entity.Power">
+        select * from power where id in
+        (select powerid from power_department where departmentid=
+        (select departmentid from user_work_info where userid=#{id} and statis='pass')
+        )
+    </select>
+
+    <select id="getSendEmailVo" resultType="com.informanage.usermain.entity.VO.SendEmailVo">
+         SELECT w.name as username,w.statis,d.name as departmentname,u.email
+    from user_work_info as w
+    join department as d on w.departmentid=d.id
+    join user as u on u.id =w.userid
+    where w.userid=#{id}
+        </select>
+
+    <select id="selectWorkInfoPage" resultType="com.informanage.usermain.entity.VO.UserWorkInfoPlus">
+select w.userid,w.name,w.age,w.sex,w.education,w.workinfo,w.awardsinfo,w.punishmentinfo,w.phone,w.address,w.salary,d.name as department
+from user_work_info as w
+join department as d on w.departmentid=d.id
+        ${ew.customSqlSegment}
+    </select>
+</mapper>

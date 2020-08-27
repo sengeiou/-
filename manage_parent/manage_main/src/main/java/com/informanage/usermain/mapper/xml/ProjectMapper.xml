@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.informanage.usermain.mapper.ProjectMapper">
+<select id="getYearList" resultType="java.lang.Integer">
+    SELECT YEAR(gmt_modified) as year FROM project
+ GROUP BY YEAR(gmt_modified)
+
+</select>
+    <select id="getInfo" resultType="com.informanage.usermain.entity.admin.ProjectStatisCount">
+
+        select * from
+ (SELECT count(1) as pass FROM project where statis='pass' and YEAR(gmt_modified)=#{id}) as a
+JOIN
+ (SELECT count(1) as wait FROM project where statis='wait' and YEAR(gmt_modified)=#{id}) as b
+    </select>
+</mapper>
